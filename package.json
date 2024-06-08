@@ -10,6 +10,7 @@
   "author": "Emiliano",
   "license": "ISC",
   "dependencies": {
+    "proxy-chain": "^2.4.0",
     "puppeteer": "^13.0.0"
   }
 }
