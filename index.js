@@ -16,10 +16,9 @@ async function runVotes() {
     console.log("Votou "+ i +" vezes?");
     const context = await browser.createIncognitoBrowserContext();
     const page = await context.newPage();
-    await page.goto(`https://poll.fm/13862347/`);    
-    //document.querySelector("#PDI_answer61821574").click();
-    await page.evaluate(() => {      
-      document.querySelector("#PDI_answer61821573").click();
+    await page.goto(`https://poll.fm/13862347/`);
+    await page.evaluate(() => {
+      document.querySelector("#PDI_answer61821574").click();
       document.querySelector(".pds-vote-button").click();
     });
     await page.close();
