@@ -1,12 +1,7 @@
-import puppeteer from "puppeteer";
-import proxyChain from "proxy-chain";
-
-// change username & password
-//const oldProxyUrl = 'socks5://127.0.0.1:9050'
-//const newProxyUrl = await proxyChain.anonymizeProxy(oldProxyUrl);
+import puppeteer from "puppeteer"; //npm i puppeteer; npx @puppeteer/browsers install chrome@stable
 
 const browser = await puppeteer.launch({
-  executablePath: '/usr/bin/chromium-browser',
+  //executablePath: '/usr/bin/chromium-browser', // local onde o chromium tá instalado
   headless: true, // set to false to see browser and test if script works
   args: ["--incognito"],
 });
